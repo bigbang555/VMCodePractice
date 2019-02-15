@@ -1,5 +1,7 @@
 package com.zy.stack;
-
+/**
+ * VM Args: -Xss128K
+ * */
 public class JavaVMStackSOF {
 
     private int stackLength;
@@ -14,7 +16,6 @@ public class JavaVMStackSOF {
         try {
             oom.stackLeak();
         } catch (Exception e) {
-            e.printStackTrace();
             System.out.println("stack length:" + oom.stackLength);
         }
     }
